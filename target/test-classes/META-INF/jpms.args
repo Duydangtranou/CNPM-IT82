@@ -1,0 +1,4 @@
+--patch-module
+nhom4.group4.qlkhachsan=_
+--add-reads
+nhom4.group4.qlkhachsan=ALL-UNNAMED

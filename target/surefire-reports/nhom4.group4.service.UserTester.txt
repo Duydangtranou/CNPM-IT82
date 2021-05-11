@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: nhom4.group4.service.UserTester
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.682 s <<< FAILURE! - in nhom4.group4.service.UserTester
+testDataSource{String, String, boolean}[3]  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at nhom4.group4.qlkhachsan/nhom4.group4.service.UserTester.testDataSource(UserTester.java:96)
+

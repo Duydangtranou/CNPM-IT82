@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="521.0" prefWidth="613.0" spacing="20.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nhom4.group4.qlkhachsan.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Text fill="#6699dd" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black; -fx-stroke-width: 1;" text="Quản Lý Khách Sạn">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Text>
+      <HBox prefHeight="477.0" prefWidth="555.0">
+         <children>
+            <GridPane prefHeight="446.0" prefWidth="267.0" style="-fx-background-color: lightgray; -fx-border-color: black;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.199951171875" minWidth="10.0" prefWidth="82.59998779296875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.19996337890626" minWidth="10.0" prefWidth="165.2" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.80001220703127" minWidth="10.0" prefWidth="18.80000000000001" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="84.4" minHeight="10.0" prefHeight="73.00000228881837" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="84.4" minHeight="10.0" prefHeight="73.00000228881837" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="240.79999389648438" minHeight="0.0" prefHeight="59.79999999999998" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="240.79999389648438" minHeight="10.0" prefHeight="92.39999389648438" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="240.79999389648438" minHeight="0.0" prefHeight="84.40000610351561" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="270.4000152587891" minHeight="10.0" prefHeight="115.20001220703125" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="51.19998779296873" minHeight="10.0" prefHeight="51.19998779296873" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtName" prefHeight="32.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Text fill="#0b0b0b" strokeType="OUTSIDE" strokeWidth="0.0" text=" Tên phòng" textAlignment="CENTER" wrappingWidth="75.0" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font></Text>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="79.60000839233399" minHeight="10.0" prefHeight="65.19999160766602" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="63.59995956420899" minHeight="10.0" prefHeight="34.8" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="44.39999999999999" minHeight="10.0" prefHeight="44.39999999999999" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#addRoom" text="Thêm" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#updateRoom" text="Cập nhật" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giá" textAlignment="CENTER" wrappingWidth="75.0" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtPrice" prefHeight="31.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="cbCategories" prefHeight="26.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loại phòng" textAlignment="CENTER" wrappingWidth="80.0" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="txtDesc" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mô tả" textAlignment="CENTER" wrappingWidth="75.0" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm phòng" textAlignment="CENTER" wrappingWidth="75.0">
+                     <font>
+                        <Font name="Calibri Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtFind" prefHeight="30.0" prefWidth="165.0" GridPane.columnIndex="1" />
+                  <Text fx:id="TxtAlert" fill="#fa0000" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Tahoma Bold" size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </GridPane>
+            <TableView fx:id="tbRooms" prefHeight="433.0" prefWidth="313.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
