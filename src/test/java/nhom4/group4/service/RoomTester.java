@@ -75,7 +75,7 @@ public class RoomTester {
     
     @Test
     @DisplayName("...")
-    @Tag("add-product")
+    @Tag("add-room")
     public void testAddRoomWithInvalidCateId() {
         RoomService s = new RoomService(conn);
         
@@ -89,7 +89,7 @@ public class RoomTester {
     
     @Test
     @DisplayName("...")
-    @Tag("add-product")
+    @Tag("add-room")
     public void testAddRoomWithInvalidName() {
         RoomService s = new RoomService(conn);
         
@@ -103,7 +103,7 @@ public class RoomTester {
     
     @Test
     @DisplayName("...")
-    @Tag("add-product")
+    @Tag("add-room")
     public void testAddRoom() {
         RoomService s = new RoomService(conn);
         

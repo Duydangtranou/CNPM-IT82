@@ -31,7 +31,7 @@ CREATE TABLE `room` (
   PRIMARY KEY (`id`),
   KEY `typeid_idx` (`typeid`),
   CONSTRAINT `typeid` FOREIGN KEY (`typeid`) REFERENCES `type` (`typeid`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `room` (
 
 LOCK TABLES `room` WRITE;
 /*!40000 ALTER TABLE `room` DISABLE KEYS */;
-INSERT INTO `room` VALUES (1,'208',3,100000,NULL),(2,'107',2,75000,NULL),(3,'110',1,50000,NULL),(4,'005',2,75000,NULL),(5,'010',1,50000,NULL),(6,'305',2,75000,NULL),(7,'209',1,50000,'có cafe'),(8,'005',2,75000,NULL),(9,'101',3,80000,'tv hư'),(10,'102',2,75000,NULL),(11,'300',2,75000,''),(12,'300',2,75000,''),(13,'222',3,75000,''),(21,'230',2,35,'reetrt');
+INSERT INTO `room` VALUES (1,'208',3,100000,NULL),(2,'107',2,75000,NULL),(3,'110',1,50000,NULL),(4,'005',2,75000,NULL),(5,'010',1,50000,NULL),(6,'305A',2,75000,NULL),(7,'209',1,50000,'có cafe'),(8,'005',2,75000,NULL),(9,'101',3,80000,'tv hư'),(10,'102',2,75000,NULL),(11,'300',2,75000,'');
 /*!40000 ALTER TABLE `room` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -79,8 +79,9 @@ CREATE TABLE `user` (
   `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `password` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +90,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'admin','123456'),(2,'asda','1234'),(4,'weqw','1234'),(5,'123','123');
+INSERT INTO `user` VALUES (1,'admin','123456','admin@gmail.com'),(29,'ashford','ASDf123','lsd@gmail.com.au'),(30,'Test','123456Edu','test@ou.edu.vn'),(31,'Test','123456Edu','test@ou.edu.vn'),(32,'U1','123456','test@ou.edu.vn');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -102,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-11 21:10:43
+-- Dump completed on 2021-05-12 10:15:07

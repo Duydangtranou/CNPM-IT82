@@ -1,5 +1,6 @@
 package nhom4.group4.qlkhachsan;
 
+import java.io.IOException;
 import nhom4.group4.pojo.Room;
 import nhom4.group4.pojo.Type;
 import nhom4.group4.service.JdbcUtils;
@@ -37,6 +38,11 @@ public class PrimaryController implements Initializable {
     @FXML private TextField txtPrice;
     @FXML private TextField txtFind;
     @FXML private Text TxtAlert;
+    
+    @FXML
+    private void Return(ActionEvent evt) throws IOException{
+        App.setRoot("secondary");
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -206,15 +212,15 @@ public class PrimaryController implements Initializable {
     }
     
     private boolean ValidateFields() {
+        
         if(txtName.getText().isEmpty()){
                 TxtAlert.setText("Chưa nhập tên phòng");
                 return false;
             }
-        else if(txtPrice.getText().isEmpty()){
+         if(txtPrice.getText().isEmpty()){
                 TxtAlert.setText("Chưa nhập giá");
                 return false;
             }
-        else
-            return true;
+         return true;
     }
 }

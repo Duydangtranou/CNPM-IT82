@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="nhom4.group4.service.UserTester" time="1.682" tests="6" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="nhom4.group4.service.UserTester" time="2.216" tests="8" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16\bin"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\DELL\AppData\Local\Temp\surefire17716623891627063110 2021-05-11T21-24-20_348-jvmRun1 surefire8432526452670999478tmp surefire_011285868082149605185tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\DELL\AppData\Local\Temp\surefire9200218716419641263 2021-05-12T10-13-18_645-jvmRun1 surefire15993923686774632477tmp surefire_013142662814229795734tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="nhom4.group4.service.UserTester"/>
     <property name="surefire.test.class.path" value="C:\Users\DELL\Documents\NetBeansProjects\qlkhachsan\target\test-classes;C:\Users\DELL\.m2\repository\org\openjfx\javafx-controls\13\javafx-controls-13.jar;C:\Users\DELL\.m2\repository\org\openjfx\javafx-graphics\13\javafx-graphics-13.jar;C:\Users\DELL\.m2\repository\org\openjfx\javafx-base\13\javafx-base-13.jar;C:\Users\DELL\.m2\repository\org\openjfx\javafx-fxml\13\javafx-fxml-13.jar;C:\Users\DELL\.m2\repository\mysql\mysql-connector-java\8.0.24\mysql-connector-java-8.0.24.jar;C:\Users\DELL\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.0-M1\junit-jupiter-engine-5.8.0-M1.jar;C:\Users\DELL\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-engine\1.8.0-M1\junit-platform-engine-1.8.0-M1.jar;C:\Users\DELL\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DELL\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0-M1\junit-platform-commons-1.8.0-M1.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0-M1\junit-jupiter-api-5.8.0-M1.jar;C:\Users\DELL\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.4.20\kotlin-stdlib-jdk8-1.4.20.jar;C:\Users\DELL\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.20\kotlin-stdlib-1.4.20.jar;C:\Users\DELL\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.20\kotlin-stdlib-common-1.4.20.jar;C:\Users\DELL\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\DELL\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.4.20\kotlin-stdlib-jdk7-1.4.20.jar;C:\Users\DELL\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.0-M1\junit-jupiter-params-5.8.0-M1.jar;"/>
@@ -43,7 +43,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-12.3\netbeans\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans-12.3\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-12.3\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="localRepository" value="C:\Users\DELL\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\DELL\AppData\Local\Temp\"/>
@@ -59,14 +59,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="testAddUserWithInvalidUsername" classname="nhom4.group4.service.UserTester" time="0.554"/>
+  <testcase name="testAddUserWithInvalidUsername" classname="nhom4.group4.service.UserTester" time="0.555"/>
   <testcase name="testAddRoom" classname="nhom4.group4.service.UserTester" time="0"/>
-  <testcase name="testAddUserWithInvalidPassword" classname="nhom4.group4.service.UserTester" time="0.025"/>
-  <testcase name="testDataSource{String, String, boolean}[1]" classname="nhom4.group4.service.UserTester" time="0.031"/>
-  <testcase name="testDataSource{String, String, boolean}[2]" classname="nhom4.group4.service.UserTester" time="0.538"/>
-  <testcase name="testDataSource{String, String, boolean}[3]" classname="nhom4.group4.service.UserTester" time="0">
+  <testcase name="testAddUserWithInvalidPassword" classname="nhom4.group4.service.UserTester" time="0.516"/>
+  <testcase name="testDataSource{String, String, String, boolean}[1]" classname="nhom4.group4.service.UserTester" time="0.024"/>
+  <testcase name="testDataSource{String, String, String, boolean}[2]" classname="nhom4.group4.service.UserTester" time="0.551"/>
+  <testcase name="testDataSource{String, String, String, boolean}[3]" classname="nhom4.group4.service.UserTester" time="0.028"/>
+  <testcase name="testDataSource{String, String, String, boolean}[4]" classname="nhom4.group4.service.UserTester" time="0">
     <failure message="expected: &lt;false&gt; but was: &lt;true&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
-	at nhom4.group4.qlkhachsan/nhom4.group4.service.UserTester.testDataSource(UserTester.java:96)
+	at nhom4.group4.qlkhachsan/nhom4.group4.service.UserTester.testDataSource(UserTester.java:114)
 ]]></failure>
   </testcase>
+  <testcase name="testAddUserWithInvalidEmail" classname="nhom4.group4.service.UserTester" time="0.03"/>
 </testsuite>

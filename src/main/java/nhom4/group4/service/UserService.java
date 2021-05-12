@@ -25,10 +25,11 @@ public class UserService {
     
     public boolean addUser(User u) {
         try {
-            String sql = "INSERT INTO user(username, password) VALUES(?, ?)";
+            String sql = "INSERT INTO user(username, password, email) VALUES(?, ?, ?)";
             PreparedStatement psm = this.conn.prepareStatement(sql);
             psm.setString(1, u.getUsername());
-            psm.setString(2, u.getPassword());       
+            psm.setString(2, u.getPassword());
+            psm.setString(3, u.getEmail());   
             int rows = psm.executeUpdate();
             
             return rows > 0;
