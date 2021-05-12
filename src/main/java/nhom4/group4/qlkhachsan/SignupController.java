@@ -74,7 +74,7 @@ public class SignupController implements Initializable {
                         }
                     }
             else
-                Utils.getAlertBox("Phải nhập ít nhất 1 số, 1 chữ hoa, 1 chữ thường, 6 ký tự trở lên, không có ký tự đb", Alert.AlertType.INFORMATION).show();
+                Utils.getAlertBox("Phải có 6 ký tự trở lên, ít nhất 1 số, 1 chữ hoa và thường, ko đb", Alert.AlertType.INFORMATION).show();
         }
     }
     
@@ -84,7 +84,7 @@ public class SignupController implements Initializable {
         String regex = "^(?=.*[0-9])"
                        + "(?=.*[a-z])(?=.*[A-Z])"
                        + "(?!.*[@#$%^&+=])"
-                       + "(?=\\S+$).{6,20}$";
+                       + "(?=\\S+$).{6,36}$";
         Pattern p = Pattern.compile(regex);
 
         if (password == null) {
@@ -97,6 +97,10 @@ public class SignupController implements Initializable {
     private boolean ValidateFields() { 
         if(txtUser.getText().isEmpty()){
                 Utils.getAlertBox("Chưa nhập username", Alert.AlertType.WARNING).show();
+                return false;
+            }
+        else if(txtUser.getText().length() <= 1){
+                Utils.getAlertBox("Username không được nhập 1 ký tự", Alert.AlertType.WARNING).show();
                 return false;
             }
         else if(txtEmail.getText().isEmpty()){
