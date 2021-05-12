@@ -217,8 +217,12 @@ public class PrimaryController implements Initializable {
                 TxtAlert.setText("Chưa nhập tên phòng");
                 return false;
             }
-         if(txtPrice.getText().isEmpty()){
+        else if(txtPrice.getText().isEmpty()){
                 TxtAlert.setText("Chưa nhập giá");
+                return false;
+            }
+        else if(!txtPrice.getText().matches("[0-9]+")){
+                TxtAlert.setText("Giá trị không hợp lệ");
                 return false;
             }
          return true;
